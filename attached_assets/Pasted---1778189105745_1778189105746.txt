@@ -1,0 +1,109 @@
+Ты — исполнитель. Не занимаешься анализом, стратегией и самостоятельными улучшениями.
+Выполняешь только то, что написано ниже. Не трогаешь ничего вне списка задач.
+
+ЗАДАЧА: Добавить SEO-фундамент на сайт gostnik.ru
+
+=== ЧТО ИЗМЕНИТЬ ===
+
+1. ФАЙЛ: index.html (или аналогичный корневой HTML, возможно _document.tsx / layout.tsx в Next.js или index.html в Vite/React)
+
+   Найди раздел <head> и добавь следующие теги (если некоторые уже есть — замени на указанные значения):
+
+   <!-- PRIMARY META -->
+   <meta name="description" content="Квартиры посуточно в Санкт-Петербурге и Кисловодске от 2200 ₽. 9 апартаментов в центре: Невский проспект, Некрасова, Маяковского. Бесконтактное заселение, 5★ сервис, поддержка 24/7. Прямое бронирование без комиссии." />
+   <meta name="keywords" content="квартиры посуточно Санкт-Петербург, апартаменты посуточно Невский проспект, квартиры посуточно Кисловодск, снять квартиру на сутки Петербург центр, посуточная аренда без комиссии СПб" />
+   //www.gostnik.ru/" />
+   <meta name="robots" content="index, follow" />
+
+   <!-- OPEN GRAPH -->
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="https://www.gostnik.ru/" />
+   <meta property="og:title" content="ГОСТЬНИК — Квартиры посуточно в Санкт-Петербурге и Кисловодске | От 2200 ₽" />
+   <meta property="og:description" content="9 апартаментов в центре Петербурга и Кисловодска. Прямое бронирование без комиссии агрегаторов. Бесконтактное заселение, 5★ сервис." />
+   <meta property="og:image" content="https://www.gostnik.ru/og-image.jpg" />
+   <meta property="og:site_name" content="ГОСТЬНИК" />
+   <meta property="og:locale" content="ru_RU" />
+
+   <!-- TWITTER CARD -->
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta name="twitter:title" content="ГОСТЬНИК — Квартиры посуточно в СПб и Кисловодске" />
+   <meta name="twitter:description" content="9 апартаментов в центре. Прямое бронирование без комиссии. От 2200 ₽." />
+   <meta name="twitter:image" content="https://www.gostnik.ru/og-image.jpg" />
+
+   <!-- STRUCTURED DATA — Organization -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "LodgingBusiness",
+     "name": "ГОСТЬНИК",
+     "url": "https://www.gostnik.ru",
+     "logo": "https://www.gostnik.ru/logo.png",
+     "description": "Сеть гостевых квартир посуточно в Санкт-Петербурге и Кисловодске. Прямое бронирование без комиссии.",
+     "telephone": "+7-xxx-xxx-xxxx",
+     "address": [
+       {
+         "@type": "PostalAddress",
+         "addressLocality": "Санкт-Петербург",
+         "addressRegion": "Санкт-Петербург",
+         "addressCountry": "RU"
+       },
+       {
+         "@type": "PostalAddress",
+         "addressLocality": "Кисловодск",
+         "addressRegion": "Ставропольский край",
+         "addressCountry": "RU"
+       }
+     ],
+     "aggregateRating": {
+       "@type": "AggregateRating",
+       "ratingValue": "4.9",
+       "reviewCount": "2000"
+     },
+     "priceRange": "от 2200 ₽/ночь"
+   }
+   </script>
+
+2. СОЗДАТЬ ФАЙЛ: /public/robots.txt со следующим содержимым:
+
+   User-agent: *
+   Allow: /
+   Sitemap: https://www.gostnik.ru/sitemap.xml
+
+3. СОЗДАТЬ ФАЙЛ: /public/sitemap.xml со следующим содержимым:
+
+   <?xml version="1.0" encoding="UTF-8"?>
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     <url>
+       oc>https://www.gostnik.ru/</loc>
+       hangefreq>weekly</changefreq>
+       <priority>1.0</priority>
+     </url>
+     <url>
+       oc>https://www.gostnik.ru/#apartments</loc>
+       hangefreq>weekly</changefreq>
+       <priority>0.8</priority>
+     </url>
+     <url>
+       oc>https://www.gostnik.ru/#booking</loc>
+       hangefreq>weekly</changefreq>
+       <priority>0.9</priority>
+     </url>
+   </urlset>
+
+4. СОЗДАТЬ ФАЙЛ: /public/og-image.jpg
+   — Используй любое существующее фото квартиры из проекта (лучшее качество).
+   — Переименуй и скопируй как og-image.jpg в /public/.
+   — Размер должен быть не менее 1200x630px. Если исходное меньше — просто скопируй как есть.
+
+=== ЧТО НЕ МЕНЯТЬ ===
+- Не трогай компоненты, тексты страниц, стили, навигацию, карточки квартир.
+- Не меняй логотип, шапку, футер, форму бронирования.
+- Не добавляй новых страниц и роутов.
+- Не меняй структуру проекта.
+
+=== ОТЧЁТ ===
+После выполнения перечисли:
+1. Что изменено (файл + строки/теги).
+2. Что создано (файлы).
+3. Что НЕ изменено.
+4. Если не смог найти нужный файл для <head> — укажи, какой файл за это отвечает в данном проекте.

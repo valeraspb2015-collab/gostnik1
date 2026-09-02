@@ -1,0 +1,2 @@
+- [Imported dependency lockfile](imported-dependency-lockfile.md) — preserve the imported manifests and lockfile unless a dependency upgrade is explicitly required.
+- [React image priority attributes](react-image-priority-attrs.md) — React 18 may warn on camelCase image priority props; emit lowercase HTML attributes through JSX spread.

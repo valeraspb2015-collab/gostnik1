@@ -1,0 +1,92 @@
+const apartments = [
+  {
+    id: 137314072,
+    rooms: 3,
+    area: 76,
+    floor: "4/5",
+    city: "Санкт-Петербург",
+    address: "Невский проспект, 134Б",
+    metro: "Площадь Восстания",
+    pricePerDay: 5000,
+    deposit: 15000,
+    cianUrl: "https://cian.ru/rent/flat/137314072/"
+  },
+  {
+    id: 234746709,
+    rooms: 3,
+    area: 76,
+    floor: "4/5",
+    city: "Санкт-Петербург",
+    address: "Невский проспект, 134Б",
+    metro: "Площадь Восстания",
+    pricePerDay: 5000,
+    deposit: 1000,
+    cianUrl: "https://cian.ru/rent/flat/234746709/"
+  },
+  {
+    id: 275532867,
+    rooms: 3,
+    area: 65,
+    floor: "3/5",
+    city: "Санкт-Петербург",
+    address: "улица Некрасова, 21",
+    metro: "Площадь Восстания",
+    pricePerDay: 4500,
+    cianUrl: "https://cian.ru/rent/flat/275532867/"
+  },
+  {
+    id: 26411146,
+    rooms: 1,
+    area: 39,
+    floor: "5/5",
+    city: "Санкт-Петербург",
+    address: "улица Некрасова, 21",
+    metro: "Чернышевская",
+    pricePerDay: 4500,
+    cianUrl: "https://cian.ru/rent/flat/26411146/"
+  },
+  {
+    id: 275781991,
+    rooms: 1,
+    area: 45,
+    floor: "4/4",
+    city: "Санкт-Петербург",
+    address: "улица Жуковского, 18",
+    metro: "Маяковская",
+    pricePerDay: 4000,
+    deposit: 1000,
+    cianUrl: "https://cian.ru/rent/flat/275781991/"
+  },
+  {
+    id: 295095084,
+    rooms: 1,
+    area: 30,
+    floor: "1/3",
+    city: "Кисловодск",
+    address: "улица Гастелло, 24",
+    pricePerDay: 1900,
+    deposit: 1000,
+    cianUrl: "https://cian.ru/rent/flat/295095084/"
+  },
+  {
+    id: 315270136,
+    rooms: 1,
+    area: 32,
+    floor: "4/5",
+    city: "Кисловодск",
+    address: "улица Героев Медиков, 50",
+    pricePerDay: 1900,
+    cianUrl: "https://cian.ru/rent/flat/315270136/"
+  },
+  {
+    id: 320426273,
+    rooms: 2,
+    area: 40,
+    floor: "1/2",
+    city: "Кисловодск",
+    address: "улица Прямая, 34",
+    pricePerDay: 1900,
+    deposit: 3000,
+    cianUrl: "https://cian.ru/rent/flat/320426273/"
+  }
+];

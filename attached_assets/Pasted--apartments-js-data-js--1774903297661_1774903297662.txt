@@ -1,0 +1,72 @@
+Найди в проекте файл с данными квартир (например apartments.js, data.js или аналогичный).
+Найди там объекты квартир с city: "Кисловодск".
+В каждый объект добавь поле photos: [] со списком URL фото с Циан.
+
+Вот данные для каждой квартиры — скопируй photos[] в соответствующий объект:
+
+// ул. Гастелло, 24 (id: 295095084)
+photos: [
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2040179858-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2032051861-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2032051854-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2030016733-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2030016725-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2030016715-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2032051859-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2032051862-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2040083736-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2607297447-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2607284155-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2607562878-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2607297505-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-gastello-2813997322-1.jpg",
+]
+
+// ул. Героев Медиков, 50 (id: 315270136)
+photos: [
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434631488-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434631492-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434631495-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434629599-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434631491-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434629581-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434629587-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434629569-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434629555-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434631489-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434629582-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434629596-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434631496-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434631487-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434631490-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-kislovodsk-ulica-geroev-medikov-2434629554-1.jpg",
+]
+
+// пос. Аликоновка, ул. Прямая, 34 (id: 320426273)
+photos: [
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583493719-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583493377-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583492949-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583500860-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583493688-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583493622-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583492947-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583493786-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583492940-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583493426-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583496493-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583496357-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583496035-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583495814-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583495419-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583495893-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583495150-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583495956-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583495649-1.jpg",
+  "https://images.cdn-cian.ru/images/posutochnaja-kvartira-alikonovka-pryamaya-ulica-2583496516-1.jpg",
+]
+
+После добавления photos[] убедись что:
+1. В карточке квартиры отображается photos[0] как главное фото
+2. Логика отображения фото такая же как у квартир СПб
+3. Ничего больше не менять

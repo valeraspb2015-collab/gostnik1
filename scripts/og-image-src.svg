@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F7F2EA"/>
+
+  <rect x="0" y="0" width="6" height="630" fill="#C8923A"/>
+
+  <rect x="80" y="220" width="90" height="90" rx="18" fill="url(#og)"/>
+  <defs>
+    <linearGradient id="og" x1="80" y1="220" x2="170" y2="310" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C8923A"/>
+      <stop offset="1" stop-color="#8B5E1F"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="100" y="236" width="48" height="12" rx="3" fill="#FFFFFF"/>
+  <rect x="100" y="236" width="12" height="52" rx="3" fill="#FFFFFF"/>
+
+  <text x="190" y="283" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#1A1714" letter-spacing="6">ГОСТЬНИК</text>
+
+  <rect x="190" y="308" width="80" height="2" fill="#C8923A"/>
+
+  <text x="190" y="346" font-family="Arial, sans-serif" font-size="28" fill="#6B5C45" letter-spacing="5">СЕТЬ ГОСТЕВЫХ КВАРТИР</text>
+
+  <text x="190" y="420" font-family="Arial, sans-serif" font-size="32" fill="#4A3F30">Квартиры посуточно в Санкт-Петербурге и Кисловодске</text>
+
+  <rect x="80" y="530" width="1040" height="1" fill="#D4C4A8" opacity="0.6"/>
+  <text x="80" y="572" font-family="Arial, sans-serif" font-size="22" fill="#A08060">gostnik.ru</text>
+</svg>

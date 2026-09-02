@@ -1,0 +1,68 @@
+Ты — исполнитель. Не занимаешься анализом, стратегией и самостоятельными улучшениями.
+Выполняешь только то, что написано ниже. Не трогаешь ничего вне списка задач.
+
+ЗАДАЧА А: Добавить финальный CTA-блок перед футером
+
+1. СОЗДАТЬ файл: client/src/components/final-cta-section.tsx
+
+   Содержимое:
+
+   import React from "react";
+
+   export default function FinalCtaSection() {
+     return (
+       <section className="py-16 bg-amber-50">
+         <div className="max-w-2xl mx-auto px-4 text-center">
+           <h2 className="text-3xl font-bold text-gray-900 mb-4">
+             Готовы забронировать?
+           </h2>
+           <p className="text-gray-600 mb-8 text-lg">
+             Выберите квартиру и бронируйте напрямую — без посредников и комиссий.
+             Ответим в течение 15 минут.
+           </p>
+           <a
+             href="#booking"
+             className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors"
+           >
+             Забронировать квартиру
+           </a>
+           <p className="mt-4 text-sm text-gray-400">
+             Или позвоните: <a href="tel:+79213798941" className="text-amber-600 font-medium">+7 921 379-89-41</a>
+           </p>
+         </div>
+       </section>
+     );
+   }
+
+2. ВСТРОИТЬ в client/src/pages/home.tsx
+   Импортируй: import FinalCtaSection from "@/components/final-cta-section";
+   Вставь <FinalCtaSection /> ПОСЛЕ секции отзывов (ReviewsSection или аналог)
+   и ДО футера (Footer).
+
+ЗАДАЧА Б: Обновить sitemap.xml
+
+Открой файл client/public/sitemap.xml.
+Добавь в него следующие URL (после уже существующих записей):
+
+     <url>
+       oc>https://www.gostnik.ru/#why-direct</loc>
+       hangefreq>monthly</changefreq>
+       <priority>0.7</priority>
+     </url>
+     <url>
+       oc>https://www.gostnik.ru/#reviews</loc>
+       hangefreq>weekly</changefreq>
+       <priority>0.7</priority>
+     </url>
+
+=== ЧТО НЕ МЕНЯТЬ ===
+- Hero, карточки, блок сравнения, форму бронирования, отзывы — НЕ ТРОГАТЬ.
+- Все изменения из предыдущих итераций — НЕ ТРОГАТЬ.
+- Стили существующих компонентов — НЕ ТРОГАТЬ.
+- robots.txt — НЕ ТРОГАТЬ.
+
+=== ОТЧЁТ ===
+1. Путь созданного файла final-cta-section.tsx.
+2. В каком файле и строке вставлен <FinalCtaSection />, что до и после него.
+3. Подтверждение обновления sitemap.xml (сколько URL стало итого).
+4. Что НЕ изменено.
