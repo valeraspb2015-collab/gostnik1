@@ -38,9 +38,11 @@ export default defineConfig({
             launchOptions,
             viewport: { width: 375, height: 812 },
             hasTouch: true,
-            // Firefox cannot emulate isMobile; it still runs every assertion
-            // at the same narrow viewport, with touch enabled.
-            ...(browserName !== "firefox" ? { isMobile: true } : {}),
+            // These projects cover narrow layouts, not real mobile devices.
+            // Firefox cannot emulate isMobile, and mobile WebKit cannot send
+            // wheel input. Keep touch enabled and run the same native scroll
+            // assertions in all engines rather than skipping them.
+            ...(browserName === "chromium" ? { isMobile: true } : {}),
           },
         },
       ];
