@@ -1,0 +1,27 @@
+name: City journal gallery browsers
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  gallery:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run test:city-journal:browser:install:ci
+      - run: npm run test:city-journal:browser
+      - name: Keep failure screenshots and traces
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: city-journal-browser-failures
+          path: test-results/
+          retention-days: 7
